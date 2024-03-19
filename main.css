@@ -1,0 +1,302 @@
+/*AFTER LOGGING IN*/
+
+body, header, main, footer {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  
+}
+
+.header-left {
+  flex: 1;
+}
+
+.header-right {
+  flex: 1;
+  text-align: right;
+}
+
+.logo {
+  width: 50px; 
+}
+
+.profile-icon {
+  width: 40px; 
+}
+
+
+.main-content {
+  
+  padding: 20px;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color:#474b72; 
+  padding: 10px 0;
+  
+}
+
+.navbar-icon {
+  width: 40px; 
+}
+
+.navbar-icon img {
+  width: 100%;
+}
+
+/*main content buttons*/
+
+.main-content {
+  padding: 20px;
+}
+
+
+.session-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.book-session-btn {
+  background-color: #474b72;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+.gym-session-btn {
+  width: 45%; 
+}
+
+.clinical-session-btn {
+  width: 45%; 
+}
+
+/*picture in page*/
+.image-container {
+  text-align: center;
+}
+
+.image-container img {
+  max-width: 100%; /* Ensure image fits container width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Add border radius to image container */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+
+
+/*LOGIN AND SIGNUP*/
+html{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/*TOP Nav*/
+
+.nav-items{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 16rem;
+}
+
+
+/*Log in page*/
+.form {
+    background-color: #474b72;
+    border-radius: 20px;
+    box-sizing: border-box;
+    height: max-content;
+    padding: 20px;
+    width: 320px;
+  }
+  
+  .title {
+    color: #eee;
+    font-family: sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 30px;
+  }
+  
+  .subtitle {
+    color: #eee;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  
+  .input-container {
+    height: 50px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .ic1 {
+    margin-top: 40px;
+  }
+  
+  .ic2 {
+    margin-top: 30px;
+  }
+  
+  .input {
+    background-color: #303245;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 100%;
+  }
+  
+  .cut {
+    background-color: #474b72;
+    border-radius: 10px;
+    height: 20px;
+    left: 20px;
+    position: absolute;
+    top: -20px;
+    transform: translateY(0);
+    transition: transform 200ms;
+    width: max-content;
+  }
+  
+  .cut-short {
+    width: 50px;
+  }
+  
+  .iLabel {
+    color: #65657b;
+    font-family: sans-serif;
+    left: 20px;
+    line-height: 14px;
+    pointer-events: none;
+    position: absolute;
+    transform-origin: 0 50%;
+    transition: transform 200ms, color 200ms;
+    top: 20px;
+  }
+  
+  .input:focus ~ .cut {
+    transform: translateY(8px);
+  }
+  
+  .input:focus ~ .iLabel {
+    transform: translateY(-30px) translateX(10px) scale(0.75);
+  }
+  
+  .input:not(:focus) ~ .iLabel {
+    color: #808097;
+  }
+  
+  .input:focus ~ .iLabel {
+    color: #dc2f55;
+  }
+  
+  .submit {
+    background-color: #08d;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    margin-top: 38px;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .submit:active {
+    background-color: #06b;
+  }
+
+  .btn-con{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 4rem;
+      
+  }
+
+  .btn-one{
+     border: none;
+     padding: 10px;
+     font-size: 1.2rem;
+     color: aliceblue;
+     border-radius: 10px;
+     width: 149px;
+  }
+
+
+  .couresel-img{
+    height: 334px;
+    width: 301px;
+    background-image: url(/img/samuel-girven-VJ2s0c20qCo-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    margin-top: 3rem;
+    border-radius: 20px;
+  }
+
+  .book{
+    background-color: #5679B3;
+    color: #eee;
+    border: none;
+    margin-top: 3rem;
+    width: 149px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+  
+  }
+
+  .btn-booking{
+    margin: 0 auto;
+  }
+
+  .main-sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  a {
+    color: #eee; 
+    text-decoration: none; 
+}
+
+a:hover {
+    text-decoration: none; 
+    color: #ccc; 
+}
